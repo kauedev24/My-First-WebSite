@@ -1,3 +1,13 @@
+:root {
+    --color1-background: #0019FF;
+    --color2-background: #000B73;
+    --color3-background: #09C900;
+    --color4-background: #045500;
+    --white-color: #fff;
+    --black-color: #000;
+    --gap: 3rem; /*30px*/
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -10,10 +20,10 @@ html {
 
 body{
     font-family: 'Open Sans', sans-serif;
-    /* background-color: rgb(12, 27, 61); */
-    background-image: url('assets/img/wintery-sunburst.png');
     font-size: 1.6rem;
+    color: var(--black-color)
 }
+
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
@@ -44,10 +54,23 @@ h6 {
     font-size: 3.5rem;
 }
 
-main{
-    background-color: white;
-    width: 500px;
-    margin: auto;
-    padding: 10px;
-    box-shadow: 3px 3px 5px black;
+.main-bg {
+    background-image: url('../img/scattered-forcefields.png');
+    background-size: cover;
+    background-position: center center;
+    color: var(--white-color)
+}
+.white-bg {
+    background-image: url('../img/scattered-forcefields1.png');
+}
+
+
+.main-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: var(--gap)
+}
+
+.section {
+    min-height: 100vh;
 }
