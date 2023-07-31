@@ -13,7 +13,6 @@
     padding: 0;
 }
 
-
 html {
     font-size: 62.5%;
 }
@@ -23,7 +22,6 @@ body{
     font-size: 1.6rem;
     color: var(--black-color)
 }
-
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
@@ -64,13 +62,13 @@ a {
     background-position: center center;
     color: var(--white-color)
 }
+
 .white-bg {
     background-image: url('../img/scattered-forcefields1.png');
 }
 
-
 .main-content {
-    max-width: 900px;
+    max-width: 90rem;
     margin: 0 auto;
     padding: var(--gap)
 }
@@ -79,14 +77,17 @@ a {
     min-height: 100vh;
 }
 
+.menu-spacing {
+    height: 65px;
+}
+
 .menu {
-    background: var(--white-color);
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     width: 100%;
-    border-bottom: 1px solid #eee;
+    border-bottom: 0.1rem solid #eee;
 }
 
 .menu-content {
@@ -101,6 +102,7 @@ a {
     font-size: 2.3rem;
     color: var(--color2-background)
 }
+
 .menu h1 a {
     color: inherit
 }
@@ -110,6 +112,7 @@ a {
     display: flex;
     
 }
+
 .menu ul li a {
     display: block;
     padding: 2.0rem;
@@ -133,4 +136,29 @@ a {
 .menu ul li a:hover::after {
     width: 50%;
     left: 26%;
+}
+
+.intro-content {
+    position: relative;
+    top: -8rem;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: var(--gap);
+    height: 100vh;
+}
+
+.intro-text-content {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.intro-text-content h2 {
+    font-size: 6rem;
+    margin-bottom: 5rem;
+    /* text-transform: uppercase; */
+}
+
+.intro-text-content p {
+    text-transform: uppercase;
 }
