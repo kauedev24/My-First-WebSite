@@ -12,6 +12,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html {
@@ -88,7 +89,7 @@ p {
 }
 
 .menu-spacing {
-    height: 65px;
+    height: 6.5rem;
 }
 
 .menu {
@@ -150,7 +151,7 @@ p {
 
 .intro-content {
     position: relative;
-    top: -5rem;
+    top: -6rem;
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     gap: var(--gap);
@@ -193,5 +194,46 @@ p {
 }
 
 .about-content p{
-    line-height: 1.5;
+    line-height: 1.15;
 }
+
+.grid-one-content {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    height: 100vh;
+}
+
+.grid-one-content h2{
+    margin-top: 10rem;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gap);
+    counter-reset: grid-counter;
+}
+
+.grid h3 {
+    font-size: 3rem;
+    position: relative;
+    padding-left: 3.5rem;
+    padding-bottom: 1rem;
+    padding-top: 25rem;
+}
+
+.grid h3::before {
+    counter-increment: grid-counter;
+    content: counter(grid-counter);
+    position: absolute;
+    font-size: 8rem;
+    font-style: italic;
+    font-family: 'OpenSans', sans-serif;
+    top: -4rem;
+    left: 0;
+    transform: rotate(5deg);
+    padding-top: 25.5rem;
+}
+
