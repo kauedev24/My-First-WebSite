@@ -150,11 +150,11 @@ p {
 
 .intro-content {
     position: relative;
-    top: -5rem;
+    /* top: -5rem; */
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     gap: var(--gap);
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .intro-text-content, .intro-img {
@@ -176,7 +176,7 @@ p {
 
 .intro-img img {
     max-width: 100%;
-    height: auto;
+    min-height: auto;
 }
 
 .about-content {
