@@ -1,0 +1,197 @@
+:root {
+    --color1-background: #0019FF;
+    --color2-background: #070d41; /*000B73*/
+    --color3-background: #09C900;
+    --color4-background: #033E00; /*045500*/
+    --white-color: #fff;
+    --black-color: #000;
+    --gray-color: #d6cbcb;
+    --gap: 3rem; /*30px*/
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    color: var(--black-color)
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-size: 6rem;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 6rem;
+    margin-bottom: 5rem;
+    text-transform: uppercase;
+    line-height: 0.9;
+}
+
+h3 {
+    font-size: 5rem;
+}
+
+h4 {
+    font-size: 4.5rem;
+}
+
+h5 {
+    font-size: 4rem;
+}
+
+h6 {
+    font-size: 3.5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin-bottom: 3rem;
+}
+
+.main-bg {
+    background-image: url('../img/scattered-forcefields.png');
+    background-size: cover;
+    background-position: center center;
+    color: var(--white-color)
+}
+
+.white-bg {
+    background-image: url('../img/scattered-forcefields1.png');
+    color: var(--color2-background);
+}
+
+.main-content {
+    max-width: 90rem;
+    margin: 0 auto;
+    padding: var(--gap)
+}
+
+.section {
+    min-height: 100vh;
+}
+
+.menu-spacing {
+    height: 65px;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1;
+    border-bottom: 0.1rem solid #eee;
+}
+
+.menu-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.menu h1 {
+    font-size: 2.3rem;
+}
+
+.menu h1 a {
+    color: inherit
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    
+}
+
+.menu ul li a {
+    display: block;
+    padding: 2.0rem;
+    font-size: 1.8rem;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--color2-background);
+    position: relative;
+}
+
+.menu ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    width: 0;
+    height: 0.2rem;
+    background: var(--color2-background);
+    transition: all 300ms ease-in-out;
+}
+
+.menu ul li a:hover::after {
+    width: 50%;
+    left: 26%;
+}
+
+.intro-content {
+    position: relative;
+    /* top: -5rem; */
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: var(--gap);
+    min-height: 100vh;
+}
+
+.intro-text-content, .intro-img {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.intro-text-content h2 {
+    /* font-family: 'OpenSans', sans-serif; */
+    color: var(--gray-color)
+}
+
+.intro-text-content p {
+    line-height: 1.5;
+    color: var(--gray-color );
+    font-size: larger;
+}
+
+.intro-img img {
+    max-width: 100%;
+    min-height: auto;
+}
+
+.about-content {
+    max-width: 64rem;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.about-content h2 {
+    text-transform: none;
+}
+
+.about-content p{
+    line-height: 1.5;
+}
